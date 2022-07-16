@@ -6,31 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/rgroup"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spnOs"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:entries="@array/spnOs_items"
+        android:minHeight="32dp"
+        android:prompt="@string/spnOs_prompt"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <RadioButton
-            android:id="@+id/rb1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Windows"/>
-        <RadioButton
-            android:id="@+id/rb2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Linux"/>
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="macOS"/>
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seek"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:max="20"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rgroup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:text="Windows"/>-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:text="Linux"/>-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:text="macOS"/>-->
+<!--    </RadioGroup>-->
 
 <!--    <ToggleButton-->
 <!--        android:id="@+id/toggle"-->
